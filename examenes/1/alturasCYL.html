@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alturas de equipos</title>
+    <link rel="stylesheet" href="alturas.css" />
+    <script src="alturas_equipos.js"></script>
+  </head>
+  <body>
+    <br />
+    <!-- Controles para la búsqueda y entradas de datos-->
+    <div id="controles">
+      <table summary="Selector de alturas">
+        <tr>
+          <td
+            colspan="19"
+            class="tablecell"
+            align="center"
+            style="height: 40px"
+          >
+            <h2>Alturas de jugadores por equipos</h2>
+          </td>
+        </tr>
+        <tr>
+          <td width="20px"></td>
+          <td colspan="8" class="tableclass">Busca tu comentario</td>
+          <td width="20px" class="tablecell"></td>
+          <td colspan="5" align="center" class="tableclass">
+            <input type="text" id="findcomment" />
+          </td>
+          <td><img src="seek_search_find.png" id="gofind" /></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td
+            colspan="19"
+            class="tablecell"
+            align="center"
+            style="height: 20px"
+          ></td>
+        </tr>
+        <tr>
+          <td width="50px"></td>
+          <td colspan="2">
+            <div class="boton" id="reset">Reset</div>
+          </td>
+          <td width="20px"></td>
+          <td colspan="2">
+            <div class="boton" id="first">Primero</div>
+          </td>
+          <td width="20px"></td>
+          <td colspan="2">
+            <div class="boton" id="prev">Anterior</div>
+          </td>
+          <td width="20px"></td>
+          <td colspan="2">
+            <div class="boton" id="next">Siguiente</div>
+          </td>
+          <td width="20px"></td>
+          <td colspan="2">
+            <div class="boton" id="last">Último</div>
+          </td>
+          <td width="20px"></td>
+          <td colspan="2">
+            <div class="boton" id="auto">Automático</div>
+          </td>
+          <td width="50px"></td>
+        </tr>
+        <tr>
+          <td
+            colspan="19"
+            class="tablecell"
+            align="center"
+            style="height: 20px"
+          ></td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Bloques para los mensajes y muestra de datos -->
+
+    <div id="avisos">Los fallos de uso se muestran aqui</div>
+    <div id="informacion">
+      <div>
+        <div class="fila">
+          <div class="celda" id="nequipo">##</div>
+          <div class="celda" id="nombre">Nombre del equipo</div>
+        </div>
+      </div>
+      <div class="fila">
+        <div id="altura1" class="celda altura">#1</div>
+        <div id="altura2" class="celda altura">#2</div>
+        <div id="altura3" class="celda altura">#3</div>
+        <div id="altura4" class="celda altura">#4</div>
+        <div id="altura5" class="celda altura">#5</div>
+        <div id="altmin" class="celda altura">Menor</div>
+        <div id="altmax" class="celda altura">Mayor</div>
+      </div>
+      <div id="descripcion" class="celda">
+        En este espacio se muestra un comentario sobre el equipo
+      </div>
+    </div>
+  </body>
+  <script src="alturasCYL.js"></script>
+</html>
