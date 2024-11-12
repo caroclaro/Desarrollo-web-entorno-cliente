@@ -1,4 +1,4 @@
-// Carolina Yelmo López :)
+// Caro :)
 // ==============================
 
 const nequipo = document.getElementById("nequipo");
